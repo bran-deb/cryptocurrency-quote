@@ -13,6 +13,7 @@ document.addEventListener('DOMContentLoaded', () => {
     formulario.addEventListener('submit', submitFormulario)
 
     criptomonedasSelect.addEventListener('change', leerValor)
+    monedaSelect.addEventListener('change', leerValor)
 })
 
 
@@ -38,11 +39,14 @@ function selectCriptomonedas(criptomonedas) {
     });
 }
 
-function submitFormulario() {
+function submitFormulario(e) {
     e.preventDefault()
-    console.log(moneda, criptomoneda)
+    const { moneda, criptomoneda } = objBusqueda,
+        resul = ((moneda && criptomoneda) === '')
+            ? console.log('ambos campos son obligatorios')
+            : console.log('correcto')
 }
 
 function leerValor(e) {
-    console.log(objBusqueda)
+    objBusqueda[e.target.name] = e.target.value
 }
