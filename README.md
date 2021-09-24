@@ -9,4 +9,3 @@
 
 ## 💾 Features
 > a Cryptocurrency quote
-# cryptocurrency-quote
