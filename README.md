@@ -6,6 +6,7 @@
 > - CSS
 > - HTML
 > - JavaScript
+> - API
 
 ## 💾 Features
 > a Cryptocurrency quote
